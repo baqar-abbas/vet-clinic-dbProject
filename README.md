@@ -63,31 +63,19 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [vet-clinic-dbProject] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> vet-clinic-dbProject is a postgreSQL database that store details of animals in a veterinary clinic and also generates specific reports using SQL queries.
 
-**[your_project__name]** is a...
+**[vet-clinic-dbProject]** is a postgreSQL database that store details of animals in a veterinary clinic
 
 ## 🛠 Built With <a name="built-with"></a>
 
+> PostgreSQL
+
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
+> PostgreSQL
 
 <details>
 <summary>Database</summary>
@@ -100,11 +88,12 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> Animals table that consists of details of each animal's Name, DoB, Escape attempts, nuetered and weight.
+> Queries - listing all animals based on certain criteria, filtering records and fetching particualar data from db.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Maintains_Animals_record]**
+- **[Querying_Animals_table]**
+- **[Updating_records]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,7 +101,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> NA
 
 - [Live Demo Link](<replace-with-your-deployment-URL>)
 
@@ -122,9 +111,9 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
+
+- [Postgress SQL download](https://www.postgresql.org/download/) 
 
 ### Prerequisites
 
@@ -141,7 +130,7 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-
+git@github.com:baqar-abbas/vet-clinic-dbProject.git
 <!--
 Example commands:
 
@@ -151,23 +140,10 @@ Example commands:
 ```
 --->
 
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
 ### Usage
 
 To run the project, execute the following command:
-
+  psql -u postgres
 <!--
 Example command:
 
@@ -178,7 +154,7 @@ Example command:
 
 ### Run tests
 
-To run tests, run the following command:
+To run tests, run the following command: NA
 
 <!--
 Example command:
@@ -190,7 +166,7 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: NA
 
 <!--
 Example:
@@ -208,17 +184,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Baqar Abbas**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Baqar](https://github.com/baqar-abbas)
+- Twitter: [@BaqarAbbas9](https://twitter.com/BaqarAbbas9)
+- LinkedIn: [Baqar Abbas](https://www.linkedin.com/in/baqar-abbas/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,9 +198,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[query multiple tables.]**
+- [ ] **[add "join table" for visits.]**
+- [ ] **[database performance audit.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,9 +218,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+> Message to readers 
 
-If you like this project...
+If you like this project please give it a Star...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,25 +228,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would like to thank Microverse for providing the template for this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
