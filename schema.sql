@@ -10,3 +10,7 @@ escape_attempts INT NOT NULL,
 nuetered BOOLEAN NOT NULL,
 weight_kg decimal NOT NULL
  );
+
+/* Project milestone 2 */
+
+ ALTER TABLE animals ADD COLUMN species VARCHAR(50);
