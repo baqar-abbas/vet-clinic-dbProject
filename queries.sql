@@ -53,3 +53,8 @@ SELECT nuetered, MIN(weight_kg) AS Min_weight, MAX(weight_kg) AS Max_weight from
 SELECT species, MAX(weight_kg) as Max_weight , MIN(weight_kg) as Min_weight FROM animals GROUP BY species;
 
 SELECT species, AVG(escape_attempts) AS Avg_attempts FROM animals WHERE date_of_birth > '1990-01-01' AND date_of_birth < '2000-01-01' GROUP BY species;
+
+/*CHANGES REQUIRED QUERIES */
+
+UPDATE animals SET weight_kg = -11 WHERE id = 5;
+SELECT * FROM animals;
