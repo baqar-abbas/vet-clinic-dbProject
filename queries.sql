@@ -58,3 +58,35 @@ SELECT species, AVG(escape_attempts) AS Avg_attempts FROM animals WHERE date_of_
 
 UPDATE animals SET weight_kg = -11 WHERE id = 5;
 SELECT * FROM animals;
+
+/* Project Milestone 3 - query multiple tables */
+
+SELECT animals.name, owners.full_name FROM animals
+INNER JOIN owners ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Melody Pond';
+
+SELECT animals.name, species.name FROM animals
+INNER JOIN species ON animals.species_id = species.id
+WHERE species.name = 'Pokemon';
+
+SELECT owners.full_name, animals.name FROM owners
+left JOIN animals ON owners.id = animals.owner_id;
+
+SELECT species.name, COUNT(animals.name) as no_of_animals
+   FROM animals
+   JOIN species ON animals.species_id = species.id GROUP BY(species.name);
+
+ SELECT a.name, o.full_name, s.name
+  FROM animals a
+  JOIN owners o ON a.owner_id = o.id
+  JOIN species s ON a.species_id = s.id WHERE s.name ='Digimon'AND o.full_name = 'Jennifer Orwell';  
+
+  SELECT a.name, o.full_name
+   FROM animals a
+   JOIN owners o ON a.owner_id = o.id WHERE o.full_name = 'Dean Winchester' AND a.escape_attempts = 0;
+
+  SELECT o.full_name, COUNT(a.name) as total_animal
+  FROM animals a
+  JOIN owners o ON a.owner_id = o.id GROUP BY(o.full_name) ORDER BY(total_animal) DESC;
+
+
