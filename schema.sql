@@ -14,3 +14,22 @@ weight_kg decimal NOT NULL
 /* Project milestone 2 */
 
  ALTER TABLE animals ADD COLUMN species VARCHAR(50);
+
+ /* Project Milestone 3 - query multiple tables */
+
+ CREATE TABLE owners (
+    id BIGSERIAL PRIMARY KEY NOT NULL,
+    full_name VARCHAR(100) NOT NULL,
+    age INT NOT NULL
+ );
+
+ CREATE TABLE species (
+    id BIGSERIAL PRIMARY KEY NOT NULL,
+    name VARCHAR(100) NOT NULL
+ );
+ 
+ ALTER TABLE animals DROP COLUMN species;
+
+ ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id);
+
+ ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
