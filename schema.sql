@@ -53,3 +53,20 @@ weight_kg decimal NOT NULL
    date_of_visit DATE NOT NULL,
    vet_id INT REFERENCES vets(id)
  );
+
+/*Project Milestone 5 - Performance -> Query optimiztion*/
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+--handle database performance audit by creating index
+CREATE INDEX idx_visits_animal_id ON visits (animal_id);
+
+CREATE INDEX idx_visits_vet_id ON visits (vet_id);
+
+CREATE INDEX idx_owners_email ON owners (email);
